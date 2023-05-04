@@ -1,0 +1,210 @@
+.portfo_block_{
+    height: max-content;
+    flex-grow: 1;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.portfo_block_icons{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/_icons/logo_not-framework.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.portfo_block__icons{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/_icons/logo_bootstrap.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.portfo_block___icons{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/_icons/logo_tailwind.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.name_portfo__block_icons{
+    top: 500px;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+.name_portfo__block{
+    font-family: "RobotoThin";
+    top: 500px;
+    font-size: 30px;
+    transition: 0.5s;
+    color: aqua;
+}
+
+.portfo_block_{
+    transition-delay: 0.5s;
+}
+.portfo_block_1{
+    background-color: rgba(0,0,0,25%);
+    background-image: url(../img/main/block_one/logo/image_paymilate.png);
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1535px) {
+    .portfo_block_{
+        height: 400px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:1440px) {
+    .portfo_block_{
+        height: 400px;
+        flex-grow: 1;
+        margin-bottom: 30px;
+
+    }
+  
+}
+@media (max-width:1024px) {
+    .portfo_block_{
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width:768px) {
+    .portfo_block_{
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+.portfo_block_2{
+    background-color: rgba(0,0,0,25%);
+    background-image: url(../img/main/block_one/logo/image_pai.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1024px) {
+    .portfo_block_{
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width:768px) {
+    .portfo_block_{
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.portfo_block_3{
+    background-image: url(../img/main/block_one/image_nft.png);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 25%);
+}
+@media (max-width:1024px) {
+    .portfo_block_{
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:768px) {
+    .portfo_block_{
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+.portfo_block_4{
+    background-image: url(../img/main/block_one/image_housevop.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 25%);
+}
+
+@media (max-width:1024px) {
+    .portfo_block_{
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width:768px) {
+    .portfo_block_{
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+.portfo_block_5{
+    background-image: url(../img/main/block_one/image_womazing.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 25%);
+}
+
+@media (max-width:1024px) {
+    .portfo_block_{
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width:768px) {
+    .portfo_block_{
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+.portfo_block_6{
+    background-image: url(../img/main/block_one/image_triumf.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 25%);
+}
+
+@media (max-width:1024px) {
+    .portfo_block_{
+        height: 400px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:768px) {
+    .portfo_block_{
+        height: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+

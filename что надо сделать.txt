@@ -1,0 +1,16 @@
+legend=[
+     * = in progress
+     - = need to do
+     + = made
+]
+page/all html{
+     + made in header link back to portfolio instead of a menu
+     + add components from layout
+     + add logo in header
+     - change headers
+}
+index.html{
+     + add a page to each block
+     + add page contact
+     - change reaction in widht
+}

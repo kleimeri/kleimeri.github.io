@@ -1,0 +1,112 @@
+
+.logo__t{
+     width: 250px;
+     height: 250px;
+     background-image: url(../img/New_logo.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: center;
+     border-radius: 150px;
+     box-shadow: 0px 0px 20px rgba(0, 255, 240,50%);
+     animation: infinity_anim_shodow 1s ease-in infinite;
+}
+
+@keyframes infinity_anim_shodow {
+     0%{
+          box-shadow: 0px 0px 40px rgba(0, 255, 240,100%); 
+     }
+     25%{
+          box-shadow: 0px 0px 20px rgba(0, 255, 240,100%);
+     }
+     30%{
+          box-shadow: 0px 0px 40px rgba(0, 255, 240,100%);
+     }
+     35%{
+          box-shadow: 0px 0px 30px rgba(0, 255, 240,100%);
+     }
+     50%{
+          box-shadow: 0px 0px 40px rgba(0, 255, 240,100%);
+     }
+     100%{
+          box-shadow: 0px 0px 40px rgba(0, 255, 240,100%);
+     }
+
+}
+.header_block-social_mes-img{
+     background-image: url(../img/block_two/social-media.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100%;
+     overflow: hidden;
+}
+.header_block-email-img{
+     background-image: url(../img/block_two/email-icon.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100%;
+     overflow: hidden;
+}
+.header_block-social_mes-text{
+     font-family: "RobotoThin";
+     color: #00FFDD;
+     font-size: 35px;
+     padding: 30px;
+}
+.header_block-social_mes{
+     border: 3px #00FFDD;
+     border-bottom-style: solid;
+}
+.header_block-item_two{
+     border: 3px #00FFDD;
+     border-bottom-style: solid;
+}
+.main__block-social_mes_item-icon-vk{
+     background-image: url(../img/block_two/vk.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: center;
+}
+.main__block-social_mes_item-icon-tg{
+     background-image: url(../img/block_two/telegram.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: center;
+}
+.main__block-mail_item-icon-gmail{
+     background-image: url(../img/block_two/gmail.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: center;
+     filter: drop-shadow(0px 0px 0px rgba(0, 255, 221, 25%));
+     transition: 0.5s;
+}
+.main__block-mail_item-icon-gmail:hover{
+     filter: drop-shadow(5px 10px 5px rgba(0, 255, 221, 25%));
+     transition: 0.5s;
+}
+.main__block-mail_item-icon-mail-ru{
+     background-image: url(../img/block_two/mail-ru.png);
+     background-repeat: no-repeat;
+     background-size: 100%;
+     background-position: center;
+     filter: drop-shadow(0px 0px 0px rgba(0, 255, 221, 25%));
+     transition: 0.5s;
+}
+.main__block-mail_item-icon-mail-ru:hover{
+     filter: drop-shadow(5px 10px 5px rgba(0, 255, 221, 25%));
+     transition: 0.5s;
+}
+.main__block-social_mes_item-text {
+     font-family: "RobotoThin";
+     color: #00FFDD;
+     font-size: 35px;
+     padding: 30px;
+}
+
+
+.header_block-email-text{
+     font-family: "RobotoThin";
+     color: #00FFDD;
+     font-size: 35px;
+     padding: 30px;
+}
