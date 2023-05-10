@@ -7,7 +7,7 @@ let menu_two__inner = document.querySelector('.menu_two__inner')
 let menu_text_btn = document.querySelector('.menu_text_btn')
 let close_menu = document.querySelector('#close_menu')
 
-
+let menu_two = document.querySelector('.menu_two')
 btn_open_slider.addEventListener('click',()=>{
     if( btn_inner_open_slider.style.top === '15px') {
         btn_inner_open_slider.style.top = '-85px';
@@ -80,3 +80,9 @@ menu_text__inner_btn_Portf.addEventListener('click',()=>{
         open_bio_block.style.height = '0px'
     }
 })
+
+if (window.matchMedia("(max-width: 540px)").matches) {
+    // ... ваша логика
+    // которая не станет выполняться
+    // если размер больше 540px
+  }

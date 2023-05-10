@@ -1,0 +1,18 @@
+{
+     "catalog":{
+          "block_1":{
+               "name_block":"Womazing",
+               "description":{
+                    "framework":"Без фрейморка",
+                    "adaptation":"до 1440px",
+                    "additions":"0",
+                    "tags":["Html/Css/Js","Jquery","слайдер"]
+               },
+               "image":{
+                    "name_img":"Womazing",
+                    "url": "../../../img/image_womazing.png"
+               }
+          }
+               
+     }
+}
