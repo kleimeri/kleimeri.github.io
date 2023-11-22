@@ -20,37 +20,37 @@ footer{
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .img_1{
-     background-image: url(/img/blocks/img_1.jpg);
+     background-image: url(../img/blocks/img_1.jpg);
      background-position: center;
      background-repeat: no-repeat;
 }
 .img_2{
-     background-image: url(/img/blocks/img_2.jpg);
+     background-image: url(../img/blocks/img_2.jpg);
      background-position: center ;
      background-repeat: no-repeat;
 }
 .img_3{
-     background-image: url(/img/blocks/img_3.jpg);
+     background-image: url(../img/blocks/img_3.jpg);
      background-position: center ;
      background-repeat: no-repeat;
 }
 .img_4{
-     background-image: url(/img/blocks/img_4.jpg);
+     background-image: url(../img/blocks/img_4.jpg);
      background-position: center ;
      background-repeat: no-repeat;
 }
 .img_5{
-     background-image: url(/img/blocks/img_5.jpg);
+     background-image: url(../img/blocks/img_5.jpg);
      background-position: center ;
      background-repeat: no-repeat;
 }
 .img_6{
-     background-image: url(/img/blocks/img_6.jpg);
+     background-image: url(../img/blocks/img_6.jpg);
      background-position: center ;
      background-repeat: no-repeat;
 }
 .img_7{
-     background-image: url(/img/blocks/img_7.jpg);
+     background-image: url(../img/blocks/img_7.jpg);
      background-position: center ;
      background-repeat: no-repeat;
 }
@@ -63,12 +63,12 @@ footer{
 
 }
 .img_like{
-     background-image: url(/img/like/img_like.svg);
+     background-image: url(../img/like/img_like.svg);
      background-position: center ;
      background-repeat: no-repeat;
 }
 .img_dislike{
-     background-image: url(/img/like/img_diselike.svg);
+     background-image: url(../img/like/img_diselike.svg);
      background-position: center ;
      background-repeat: no-repeat;
 }
