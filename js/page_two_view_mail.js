@@ -1,49 +1,36 @@
-let btnViewMail = document.querySelector ('#view-mail_one')
-let ViewMail = document.querySelector ('.view-mail_one')
-let ViewMailOne = document.querySelector ('.block-social_mes__inner')
 
-btnViewMail.addEventListener('click',()=>{
-     if(  ViewMail.style.left === '80px') {
-          ViewMail.style.left = '-450px'
-          ViewMail.style.transition = '0.5s'
-          ViewMailOne.style.width = '550px'
-          ViewMailOne.style.transition = '0.5s'
-     }
-     else{
-          ViewMail.style.left = '80px'
-          ViewMailTwo.style.left = '80px'
-          ViewMailOne.style.width = '400px'
-     }
-})
 
-let btnViewMailTwo = document.querySelector ('#view-mail_two')
-let ViewMailTwo = document.querySelector ('.view-mail_two')
+// BUTTONS
+let btnViewMail = document.querySelector('#view-mail_one');
+let btnViewMailTwo = document.querySelector('#view-mail_two');
+// VIEW
+let ViewMail = document.querySelector('.view-mail_one');
+let ViewMailOne = document.querySelector('.block-social_mes__inner').style;
+let ViewMailTwo = document.querySelector('.view-mail_two').style;
 
-btnViewMailTwo.addEventListener('click',()=>{
-     if(  ViewMailTwo.style.left === '80px') {
-          ViewMailTwo.style.left = '-465px'
-          ViewMailTwo.style.transition = '0.5s'
-          ViewMailOne.style.width = '550px'
-          ViewMailOne.style.transition = '0.5s'
-     }
-     else{
-          ViewMail.style.left = '80px'
-          ViewMailTwo.style.left = '80px'
-          ViewMailOne.style.width = '400px'
-     }
-})
+btnViewMail.addEventListener('click', () => {
+  if (ViewMail.style.left === '80px') {
+    ViewMail.style.left = '-450px';
+    ViewMail.style.transition = '0.5s';
+    ViewMailOne.maxWidth = '550px';
+    ViewMailOne.transition = '0.5s';
+  } else {
+    ViewMail.style.left = '80px';
+    ViewMailTwo.left = '80px';
+    ViewMailOne.maxWidth = '400px';
+  }
+});
 
-let open_my_bio_btn = document.querySelector ('#open-my-bio')
-let open_bio_block = document.querySelector ('.open-bio')
+btnViewMailTwo.addEventListener('click', () => {
+  if (ViewMailTwo.left === '80px') {
+    ViewMailTwo.left = '-465px';
+    ViewMailTwo.transition = '0.5s';
+    ViewMailOne.maxWidth = '550px';
+    ViewMailOne.transition = '0.5s';
+  } else {
+    ViewMail.style.left = '80px';
+    ViewMailTwo.left = '80px';
+    ViewMailOne.maxWidth = '400px';
+  }
 
-open_my_bio_btn.addEventListener('click',()=>{
-     if(  open_bio_block.style.height === '0px') {
-          open_bio_block.style.height = '350px'
-          open_bio_block.style.transition = '0.5s'
-     }
-     else{
-          open_bio_block.style.height = '0px'
-          open_bio_block.style.transition = '1s'
-     }
-})
-
+});

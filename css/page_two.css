@@ -79,21 +79,13 @@
      background-position: center;
      filter: drop-shadow(0px 0px 0px rgba(0, 255, 221, 25%));
      transition: 0.5s;
-}
-.main__block-mail_item-icon-gmail:hover{
-     filter: drop-shadow(5px 10px 5px rgba(0, 255, 221, 25%));
-     transition: 0.5s;
-}
+}    
 .main__block-mail_item-icon-mail-ru{
      background-image: url(../img/block_two/mail-ru.png);
      background-repeat: no-repeat;
      background-size: 100%;
      background-position: center;
      filter: drop-shadow(0px 0px 0px rgba(0, 255, 221, 25%));
-     transition: 0.5s;
-}
-.main__block-mail_item-icon-mail-ru:hover{
-     filter: drop-shadow(5px 10px 5px rgba(0, 255, 221, 25%));
      transition: 0.5s;
 }
 .main__block-social_mes_item-text {

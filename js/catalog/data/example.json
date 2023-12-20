@@ -1,18 +1,105 @@
-{
-     "catalog":{
-          "block_1":{
-               "name_block":"Womazing",
-               "description":{
-                    "framework":"Без фрейморка",
-                    "adaptation":"до 1440px",
-                    "additions":"0",
-                    "tags":["Html/Css/Js","Jquery","слайдер"]
-               },
-               "image":{
-                    "name_img":"Womazing",
-                    "url": "../../../img/image_womazing.png"
-               }
+[
+
+     {
+          "name_block": "paymilate",
+          "active": "true",
+          "link": "pages_from_block/page_paymilate.html",
+          "description": {
+               "framework": "Без фрейморка",
+               "adaptation": "до 1440px",
+               "additions": "0",
+               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
+          },
+          "image": {
+               "name_img": "Womazing",
+               "url": "img/main/block_one/logo/image_paymilate.png",
+               "class_img": "portfo_block_1",
+               "styleBgSize": "background-size: 90%;"
           }
-               
+     },
+     {
+          "name_block": "pai",
+          "link": "pages_from_block/page_pai.html",
+          "active": "true",
+          "description": {
+               "framework": "Без фрейморка",
+               "adaptation": "до 1440px",
+               "additions": "0",
+               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
+          },
+          "image": {
+               "name_img": "pai",
+               "url": "img/main/block_one/logo/image_pai.png",
+               "class_img": "portfo_block_2",
+               "styleBgSize": "background-size: 40%;"
+          }
+     },
+     {
+          "name_block": "Nft",
+          "link": "pages_from_block/page_nft.html",
+          "active": "true",
+          "description": {
+               "framework": "Без фрейморка",
+               "adaptation": "до 1440px",
+               "additions": "0",
+               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
+          },
+          "image": {
+               "name_img": "NFT",
+               "url": "img/main/block_one/image_nft.png",
+               "class_img": "portfo_block_3",
+               "styleBgSize": "background-size: 30%;"
+          }
+     },
+     {
+          "name_block": "HouseVOP",
+          "link": "pages_from_block/page_housevop.html",
+          "active": "true",
+          "description": {
+               "framework": "Без фрейморка",
+               "adaptation": "до 1440px",
+               "additions": "0",
+               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
+          },
+          "image": {
+               "name_img": "HouseVOP",
+               "url": "img/main/block_one/image_housevop.png",
+               "class_img": "portfo_block_4",
+               "styleBgSize": "background-size: 70%;"
+          }
+     },
+     {
+          "name_block": "Womazing",
+          "link": "pages_from_block/page_womazing.html",
+          "active": "true",
+          "description": {
+               "framework": "Без фрейморка",
+               "adaptation": "до 1440px",
+               "additions": "0",
+               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
+          },
+          "image": {
+               "name_img": "Womazing",
+               "url": "img/main/block_one/womazing.png",
+               "class_img": "portfo_block_5",
+               "styleBgSize": "background-size: 70%;"
+          }
+     },
+     {
+          "name_block": "triumf",
+          "link": "pages_from_block/page_triumf.html",
+          "active": "true",
+          "description": {
+               "framework": "Без фрейморка",
+               "adaptation": "до 1440px",
+               "additions": "0",
+               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
+          },
+          "image": {
+               "name_img": "Womazing",
+               "url": "img/main/block_one/image_triumf.png",
+               "class_img": "portfo_block_6",
+               "styleBgSize": "background-size: 60%;"
+          }
      }
-}
+]

@@ -4,19 +4,14 @@
     background-size: 100%;
     background-position: center;
 }
-.custom-css-text-logo{
-    color: rgba(255,255,255, 85%);
-}
-
 .btn__menu{
     font-family: "RobotoThin";
     color: rgba(255, 255, 255,50%);
     font-size: 35px;
-    
 }
 .menu_text__inner{
-    font-family: "RobotoThin";
-    font-size: 35px;
+    font-family: "JostExtraLight";
+
 }
 .disable_slider{
     display: none;
