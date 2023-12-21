@@ -8,11 +8,10 @@ body{
     /* background:#1E1E1E; */
     margin-left:10px ;
     margin-right:10px ;
-    
 
 }
 .portfo_block_:hover{
-    box-shadow: 0px 0px 30px rgba(0,255,255,20%);
+    box-shadow: 0px 0px 50px rgba(0,255,255,50%);
 }
 .portfo_block_icons{
     width: 40px;
