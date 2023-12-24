@@ -5,16 +5,15 @@
                 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
                 <link type="image/x-icon" href="img/New_logo.ico" rel="shortcut icon">
                 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
-                
                 <script src="https://cdn.tailwindcss.com"></script>
-                <link rel="stylesheet" href="dist/output.css">
                 <link rel="stylesheet" href="css/style.css">
                 <link rel="stylesheet" href="css/main.css">
                 <link rel="stylesheet" href="css/page_two.css">
                 <link rel="stylesheet" href="css/add_fonts.css">
                     <title>Kleimeri</title>
                 <link href="snow/snowFlakes/snow.min.css" rel="stylesheet">
-                </head> 
+            </head> 
+                
             <!-- google counter -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2H37GH5WV"></script>
             <script>
@@ -27,18 +26,27 @@
             <!-- /google counter -->
 
 
-    <body class="body_bg bg-[#1E1E1E] overflow-auto ">
+    <body class="body_bg bg-[#1E1E1E] relative z-50 overflow-auto  ">
 
-        <header class="container mx-auto h-[140px]" >
-            <div class="container  fixed z-10 mx-auto ">
-             <div class="container overflow-hidden flex relative mx-auto z-10 md:w-2/2 drop-shadow-[0px_10px_5px_rgba(0,0,0,0.5)] flex justify-center mt-5 bg-[#323232] rounded-full" style="transition: 1s;">
-                 <div class="flex justify-center max-[786px]: items-center max-[3000px]:w-[720px] max-[1535px]:w-[550px] max-[1280px]:w-[400px] max-[768px]:w-[50%] " >
+        <header class="container mx-auto h-[140px]"  >
+            <div class="container  fixed z-30 mx-auto ">
+                <div class="container overflow-hidden relative mx-auto z-10 md:w-2/2 drop-shadow-[0px_10px_5px_rgba(0,0,0,0.5)] flex items-center justify-center mt-5 bg-[#323232] rounded-full" style="transition: 1s;">
+                 <div class="flex justify-center max-[786px]:flex items-center max-[3000px]:w-[720px] max-[1535px]:w-[550px] max-[1024px]:w-[350px] max-[768px]:w-[50%] " >
                     <button class="min-w-max flex  " onClick="history.go(0);">
                         <div class="img-logo-header w-[80px] h-[80px] m-[12px] md:m-[5px]"></div>
                         <div class="p-2 my-auto text-white font-['JostExtraLight'] tracking-widest min-[1536px]:text-[48px] min-[1280px]:text-[48px] min-[1024px]:text-[48px] max-[786px]:text-[30px] max-[425px]:text-[0px]">Kleimeri</div>
                     </button>
                  </div>
-                 <div class="menu h-[100px] my-[5px] mr-[20px]  flex-grow flex items-center justify-center" >
+                 <div class="btn_open_burger-menu min-[769px]:hidden min-[768px]:flex justify-center w-[300px] h-[80px] ">
+                        <button id="btnOpenBurgerMenu" class="btn_open_burger-menu_inner_box flex items-center justify-center bg-[rgba(0,0,0,0.5)] rounded-[25px]">
+                            <div  class="btn_open_burger-menu_inner_lines w-[80px] h-max">
+                                <div class="lines bg-[rgba(0,255,255,1)] mx-auto w-[55px] h-[5px] my-[10px] rounded-full"></div>
+                                <div class="lines bg-[rgba(0,255,255,1)] mx-auto w-[55px] h-[5px] my-[10px] rounded-full"></div>
+                                <div class="lines bg-[rgba(0,255,255,1)] mx-auto w-[55px] h-[5px] my-[10px] rounded-full"></div>
+                            </div>
+                        </button>
+                 </div>
+                 <div class="menu max-[768px]:hidden h-[100px] my-[5px] mr-[20px] flex-grow flex items-center justify-center" >
                     
                     <div class="menu__inner rounded-[100px] overflow-hidden max-[2300px]:h-[80px] max-[1535px]:h-[70px] " style=" z-index: 100; width:230px; background-color: rgba(0, 0, 0, 0.35); transition: 0.8s;">
                         <button id="btn-menu" class="btn__menu px-[10px] text-white font-['JostExtraLight'] " style="position: relative; top:10px; left:60px; z-index: 100;">Menu</button>
@@ -69,13 +77,17 @@
                     </button>
 
                  </div>
-             </div>
-             <div class="container mx-auto w-[90%] bg-black h-[300px] mt-[-50px] min-[769px]:mt-[-750px] "></div>
+                </div>
+
+                <div class="burger-menu relative overflow-hidden container mx-auto w-[90%] bg-black mt-[-50px] min-[769px]:mt-[-750px]" style="height: 0px; transition: 0.3s;">
+                    <div class="w-full h-[50px] bg-[#fff] mt-[55px] "></div>
+                </div>
+
             </div>
         </header>
         
-        <main class="container  mx-auto overflow-auto ">
-            <div class="bg_block mx-auto h-max overflow-auto">
+        <main class="container relative z-20 mx-auto mt-[-120px]">
+            <div class="bg_block mx-auto h-max ">
 
                 <div class="bg_one_block mx-auto container h-max absolute z-0 rounded-[50px]" style=" top: 180px; transform: rotatey(0deg);">
                     <!-- <div class="filt_catalog w-[800px] ml-[60px] mb-[30px] h-max flex ">
@@ -172,10 +184,11 @@
     	new Snow ({
             iconColor:'#00FFF0',
 			showSnowBalls: false,
+            countSnowflake: '60'
 		});
     </script>
     <!-- /snow -->
-
+    <script src="js/main.js"></script>
     <script src="js/open-subtitle.js"></script>
     <script src="js/page_two_view_mail.js"></script>
     <script type="module" src="js/catalog/catalog.js"></script>  
