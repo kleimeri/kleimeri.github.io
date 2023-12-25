@@ -209,9 +209,13 @@ let blockBurgerMenu = document.querySelector('.burger-menu');
 btnBurgerMenu.addEventListener('click', () => {
   if (blockBurgerMenu.style.height === '0px') {
     blockBurgerMenu.style.height = '400px';
-    // blockBurgerMenu.classList.toggle("drop-shadow-[0px_15px_2px_rgba(30, 30, 30, 0.50)]");
+    blockBurgerMenu.classList.add("border-[1px]");
   }
   else {
     blockBurgerMenu.style.height = '0px';
+    blockBurgerMenu.classList.remove("border-[1px]");
+    blockBurgerMenu.classList.add("border-[0px]");
+
+
   }
 });
