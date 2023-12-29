@@ -70,6 +70,7 @@ setInterval(() => {
 
   }
 }, 500);
+
 setInterval(() => {
   if (window.matchMedia("(max-width: 1535px)").matches) {
 
@@ -77,7 +78,7 @@ setInterval(() => {
     bg_one_block.style.transition = '0.5s';
 
     // borderActive
-    borderActiveBtn.style.height = '70px';
+    borderActiveBtn.style.height = '65px';
     // menuText
     menuTextBtn.style.top = '12px';
     // changeBtnClose
@@ -88,24 +89,6 @@ setInterval(() => {
     }
   }
 }, 500);
-// setInterval(() => {
-//   if (window.matchMedia("(max-width: 1535px)").matches) {
-
-//     bg_two_block.style.transition = '0.5s';
-//     bg_one_block.style.transition = '0.5s';
-
-//     // borderActive
-//     borderActiveBtn.style.height = '70px';
-//     // menuText
-//     menuTextBtn.style.top = '12px';
-//     // changeBtnClose
-//     innerBtnClose.style.height = '65px';
-//     innerBtnClose.style.width = '65px';
-//     if (btnOpenSlider.style.top === '10px') {
-//       btnOpenSlider.style.top = '5px';
-//     }
-//   }
-// }, 500);
 
 // END responsive design
 
