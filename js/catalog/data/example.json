@@ -11,7 +11,7 @@
                "tags": ["Html/Css/Js", "Jquery", "слайдер"]
           },
           "image": {
-               "name_img": "Womazing",
+               "name_img": "paymilate",
                "url": "img/main/block_one/logo/image_paymilate.png",
                "class_img": "portfo_block_1",
                "styleBgSize": "background-size: 90%;"
@@ -96,7 +96,7 @@
                "tags": ["Html/Css/Js", "Jquery", "слайдер"]
           },
           "image": {
-               "name_img": "Womazing",
+               "name_img": "triumf",
                "url": "img/main/block_one/image_triumf.png",
                "class_img": "portfo_block_6",
                "styleBgSize": "background-size: 60%;"
