@@ -4,26 +4,24 @@ let btnInnerOpenSlider = document.querySelector('.btn__menu').style;
 
 let menuInnerOpenSlider = document.querySelector('.menu__inner').style;
 let addDisableSlider = document.querySelector('#add_activ-or-disable_slider');
-let menuTwoInner = document.querySelector('.menu_two__inner');
-let menu_text_btn = document.querySelector('.menu_text_btn');
-let menuTextBtn = menu_text_btn;
+let menuTwoInner = document.querySelector('.menuTwo__inner');
+let menuTextBtn = document.querySelector('.menuTextBtn');
 let closeMenu = document.querySelector('#close_menu');
 //menu buttons
 let menuInnerBtnPortfolio = document.querySelector('#btn_Portf').style;
 let menuInnerBtnPraiseList = document.querySelector('#btn_praise').style;
 let menuInnerBtnContact = document.querySelector('#btn_Contac').style;
 //borderActiveBtn
-let bg_active_btn = document.querySelector('.bg_active_btn');
-let borderActiveBtn = bg_active_btn;
+let borderActiveBtn = document.querySelector('.borderActiveBtn');
 // Blocks
-let bg_three_block = document.querySelector('.bg_three_block');
-let bg_two_block = document.querySelector('.bg_two_block');
-let bg_one_block = document.querySelector('.bg_one_block');
+let bgThreeBlock = document.querySelector('.bgThreeBlock');
+let bgTwoBlock = document.querySelector('.bgTwoBlock');
+let bgOneBlock = document.querySelector('.bgOneBlock');
 
 
-let menu_two = document.querySelector('.menu_two');
+let menuTwo = document.querySelector('.menuTwo');
 
-document.querySelector('#btn-menu').addEventListener('click', () => {
+btnOpenSlider.addEventListener('click', () => {
   if (btnInnerOpenSlider.top === '10px', '5px') {
     btnInnerOpenSlider.top = '-85px';
     btnInnerOpenSlider.transition = '1s';
@@ -33,12 +31,12 @@ document.querySelector('#btn-menu').addEventListener('click', () => {
     menuInnerOpenSlider.top = '-60px';
     // menuInnerOpenSlider.background = '#000';
 
-    bg_active_btn.style.height = '80px';
-    bg_active_btn.style.transition = '1s';
+    borderActiveBtn.style.height = '80px';
+    borderActiveBtn.style.transition = '1s';
 
 
     menuTwoInner.style.top = '0px';
-    menu_text_btn.style.top = '0px';
+    menuTextBtn.style.top = '0px';
     // close menu
     closeMenu.style.left = '0px';
     closeMenu.style.transition = '0.8s';
@@ -54,7 +52,6 @@ let innerBtnClose = document.querySelector('.btn_text_close');
 // responsive design
 
 // change family menu block
-
 setInterval(() => {
   if (window.matchMedia("(max-width: 2560px)").matches) {
 
@@ -74,8 +71,8 @@ setInterval(() => {
 setInterval(() => {
   if (window.matchMedia("(max-width: 1535px)").matches) {
 
-    bg_two_block.style.transition = '0.5s';
-    bg_one_block.style.transition = '0.5s';
+    bgTwoBlock.style.transition = '0.5s';
+    bgOneBlock.style.transition = '0.5s';
 
     // borderActive
     borderActiveBtn.style.height = '65px';
@@ -95,9 +92,9 @@ setInterval(() => {
 
 
 document.querySelector('#btn_Portf').addEventListener('click', () => {
-  if (bg_active_btn.style.left === '0%', '35%', '66.2%') {
-    bg_active_btn.style.left = '0%';
-    bg_active_btn.style.transition = '0.5s';
+  if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
+    borderActiveBtn.style.left = '0%';
+    borderActiveBtn.style.transition = '0.5s';
     //color
     menuInnerBtnContact.color = 'rgba(255,255,255,55%)';
     menuInnerBtnPortfolio.color = 'rgba(255,255,255,100%)';
@@ -106,21 +103,21 @@ document.querySelector('#btn_Portf').addEventListener('click', () => {
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
     //bg
-    bg_one_block.style.transform = "rotatey(0deg)";
-    bg_one_block.style.transition = '0.5s';
-    bg_one_block.style.transitionDelay = '0.5s';
+    bgOneBlock.style.transform = "rotatey(0deg)";
+    bgOneBlock.style.transition = '0.5s';
+    bgOneBlock.style.transitionDelay = '0.5s';
 
-    bg_three_block.style.transform = "rotatey(90deg)";
-    bg_three_block.style.transition = '0.5s';
+    bgThreeBlock.style.transform = "rotatey(90deg)";
+    bgThreeBlock.style.transition = '0.5s';
 
-    bg_two_block.style.transform = "rotatey(90deg)";
-    bg_two_block.style.transition = '0.5s';
+    bgTwoBlock.style.transform = "rotatey(90deg)";
+    bgTwoBlock.style.transition = '0.5s';
   }
 });
 document.querySelector('#btn_praise').addEventListener('click', () => {
-  if (bg_active_btn.style.left === '0%', '35%', '66.2%') {
-    bg_active_btn.style.left = '35%';
-    bg_active_btn.style.transition = '0.5s';
+  if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
+    borderActiveBtn.style.left = '35%';
+    borderActiveBtn.style.transition = '0.5s';
     //color 
     menuInnerBtnContact.color = 'rgba(255,255,255,55%)';
     menuInnerBtnPortfolio.color = 'rgba(255,255,255,55%)';
@@ -130,21 +127,21 @@ document.querySelector('#btn_praise').addEventListener('click', () => {
     menuInnerBtnPortfolio.transition = '0.5s';
     //bg
 
-    bg_three_block.style.transform = "rotatey(0deg)";
-    bg_three_block.style.transition = '0.5s';
-    bg_three_block.style.transitionDelay = '0.5s';
+    bgThreeBlock.style.transform = "rotatey(0deg)";
+    bgThreeBlock.style.transition = '0.5s';
+    bgThreeBlock.style.transitionDelay = '0.5s';
 
-    bg_two_block.style.transform = "rotatey(90deg)";
-    bg_two_block.style.transition = '0.5s';
+    bgTwoBlock.style.transform = "rotatey(90deg)";
+    bgTwoBlock.style.transition = '0.5s';
 
-    bg_one_block.style.transform = "rotatey(90deg)";
-    bg_one_block.style.transition = '0.5s';
+    bgOneBlock.style.transform = "rotatey(90deg)";
+    bgOneBlock.style.transition = '0.5s';
   }
 });
 document.querySelector('#btn_Contac').addEventListener('click', () => {
-  if (bg_active_btn.style.left === '0%', '35%', '66.2%') {
-    bg_active_btn.style.left = '66.2%';
-    bg_active_btn.style.transition = '0.5s';
+  if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
+    borderActiveBtn.style.left = '66.2%';
+    borderActiveBtn.style.transition = '0.5s';
     //color 
     menuInnerBtnContact.color = 'rgba(255,255,255,100%)';
     menuInnerBtnPraiseList.color = 'rgba(255,255,255,55%)';
@@ -153,15 +150,15 @@ document.querySelector('#btn_Contac').addEventListener('click', () => {
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
     //bg
-    bg_two_block.style.transform = "rotatey(0deg)";
-    bg_two_block.style.transition = '0.5s';
-    bg_two_block.style.transitionDelay = '0.5s';
+    bgTwoBlock.style.transform = "rotatey(0deg)";
+    bgTwoBlock.style.transition = '0.5s';
+    bgTwoBlock.style.transitionDelay = '0.5s';
 
-    bg_three_block.style.transform = "rotatey(90deg)";
-    bg_three_block.style.transition = '0.5s';
+    bgThreeBlock.style.transform = "rotatey(90deg)";
+    bgThreeBlock.style.transition = '0.5s';
 
-    bg_one_block.style.transform = "rotatey(90deg)";
-    bg_one_block.style.transition = '0.5s';
+    bgOneBlock.style.transform = "rotatey(90deg)";
+    bgOneBlock.style.transition = '0.5s';
   }
 });
 closeMenu.addEventListener('click', () => {
