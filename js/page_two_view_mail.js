@@ -1,5 +1,3 @@
-
-
 // BUTTONS
 let btnViewMail = document.querySelector('#view-mail_one');
 let btnViewMailTwo = document.querySelector('#view-mail_two');

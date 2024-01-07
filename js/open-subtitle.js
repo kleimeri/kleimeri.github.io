@@ -8,9 +8,9 @@ let menuTwoInner = document.querySelector('.menuTwo__inner');
 let menuTextBtn = document.querySelector('.menuTextBtn');
 let closeMenu = document.querySelector('#close_menu');
 //menu buttons
-let menuInnerBtnPortfolio = document.querySelector('#btn_Portf').style;
-let menuInnerBtnPraiseList = document.querySelector('#btn_praise').style;
-let menuInnerBtnContact = document.querySelector('#btn_Contac').style;
+let menuInnerBtnPortfolio = document.querySelector('#btn_Portf');
+let menuInnerBtnPraiseList = document.querySelector('#btn_praise');
+let menuInnerBtnContact = document.querySelector('#btn_Contac');
 //borderActiveBtn
 let borderActiveBtn = document.querySelector('.borderActiveBtn');
 // Blocks
@@ -30,11 +30,6 @@ btnOpenSlider.addEventListener('click', () => {
     menuInnerOpenSlider.transition = '1s';
     menuInnerOpenSlider.top = '-60px';
     // menuInnerOpenSlider.background = '#000';
-
-    borderActiveBtn.style.height = '80px';
-    borderActiveBtn.style.transition = '1s';
-
-
     menuTwoInner.style.top = '0px';
     menuTextBtn.style.top = '0px';
     // close menu
@@ -54,17 +49,11 @@ let innerBtnClose = document.querySelector('.btn_text_close');
 // change family menu block
 setInterval(() => {
   if (window.matchMedia("(max-width: 2560px)").matches) {
-
-    // borderActive
-    borderActiveBtn.style.height = '80px';
     // marginTextInMenu 
-
     menuTextBtn.style.top = '15px';
     if (btnOpenSlider.style.top === '5px') {
       btnOpenSlider.style.top = '10px';
     }
-
-
   }
 }, 500);
 
@@ -73,9 +62,6 @@ setInterval(() => {
 
     bgTwoBlock.style.transition = '0.5s';
     bgOneBlock.style.transition = '0.5s';
-
-    // borderActive
-    borderActiveBtn.style.height = '65px';
     // menuText
     menuTextBtn.style.top = '12px';
     // changeBtnClose
@@ -86,19 +72,14 @@ setInterval(() => {
     }
   }
 }, 500);
-
+;
 // END responsive design
-
 
 
 document.querySelector('#btn_Portf').addEventListener('click', () => {
   if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
     borderActiveBtn.style.left = '0%';
     borderActiveBtn.style.transition = '0.5s';
-    //color
-    menuInnerBtnContact.color = 'rgba(255,255,255,55%)';
-    menuInnerBtnPortfolio.color = 'rgba(255,255,255,100%)';
-    menuInnerBtnPraiseList.color = 'rgba(255,255,255,55%)';
     //transition
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
@@ -106,6 +87,22 @@ document.querySelector('#btn_Portf').addEventListener('click', () => {
     bgOneBlock.style.transform = "rotatey(0deg)";
     bgOneBlock.style.transition = '0.5s';
     bgOneBlock.style.transitionDelay = '0.5s';
+
+    // render-block (off \ on) - oneBlock
+    // not change oneBlock
+    // render-block (off \ on) - twoBlock
+    if (bgTwoBlock.classList.contains('hidden')) {
+      bgTwoBlock.classList.remove('hidden');
+      bgTwoBlock.classList.add('hidden');
+    }
+    // render-block (off \ on) - threeBlock
+    if (bgThreeBlock.classList.contains('hidden')) {
+      bgThreeBlock.classList.remove('hidden');
+      bgThreeBlock.classList.add('hidden');
+    }
+
+
+
 
     bgThreeBlock.style.transform = "rotatey(90deg)";
     bgThreeBlock.style.transition = '0.5s';
@@ -118,15 +115,10 @@ document.querySelector('#btn_praise').addEventListener('click', () => {
   if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
     borderActiveBtn.style.left = '35%';
     borderActiveBtn.style.transition = '0.5s';
-    //color 
-    menuInnerBtnContact.color = 'rgba(255,255,255,55%)';
-    menuInnerBtnPortfolio.color = 'rgba(255,255,255,55%)';
-    menuInnerBtnPraiseList.color = 'rgba(255,255,255,100%)';
     //transition
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
     //bg
-
     bgThreeBlock.style.transform = "rotatey(0deg)";
     bgThreeBlock.style.transition = '0.5s';
     bgThreeBlock.style.transitionDelay = '0.5s';
@@ -142,10 +134,6 @@ document.querySelector('#btn_Contac').addEventListener('click', () => {
   if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
     borderActiveBtn.style.left = '66.2%';
     borderActiveBtn.style.transition = '0.5s';
-    //color 
-    menuInnerBtnContact.color = 'rgba(255,255,255,100%)';
-    menuInnerBtnPraiseList.color = 'rgba(255,255,255,55%)';
-    menuInnerBtnPortfolio.color = 'rgba(255,255,255,55%)';
     //transition
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
@@ -165,10 +153,14 @@ closeMenu.addEventListener('click', () => {
   if (btnInnerOpenSlider.top === '-85px') {
     btnInnerOpenSlider.top = '10px';
     btnInnerOpenSlider.transitionDelay = '0.5s';
+
     menuInnerOpenSlider.flexGrow = '0';
     menuInnerOpenSlider.transition = '0.4s';
+
     btnOpenSlider.style.transition = '1.2s';
+
     menuTwoInner.style.top = '-180px';
+
     closeMenu.style.left = '1500px';
 
     menuInnerBtnPraiseList.marginLeft = '0px';
