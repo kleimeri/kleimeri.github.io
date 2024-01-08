@@ -17,14 +17,14 @@
             </head> 
                 
             <!-- google counter -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2H37GH5WV"></script>
+            <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2H37GH5WV"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
               gtag('config', 'G-Q2H37GH5WV');
-            </script>
+            </script> -->
             <!-- /google counter -->
 
 
@@ -51,7 +51,7 @@
                  <div class="menu max-[768px]:hidden h-[100px] my-[5px] mr-[20px] flex-grow flex items-center justify-center" >
                     
                     <div class="menu__inner bg-[rgba(0,0,0,0.30)] border-[#ffffff33] border-[2px] rounded-[100px] overflow-hidden  max-[1535px]:h-[70px] " style=" z-index: 100; width:230px;transition: 0.8s;">
-                        <button id="btn-menu" class="btn__menu px-[10px] text-white font-['JostExtraLight'] " aria-label="btn-menu" style="position: relative; top:10px; left:60px; z-index: 100;">Menu</button>
+                        <button id="btn-menu" class="btn__menu px-[10px] text-white font-['JostExtraLight'] " aria-label="btn-menu" style="position: relative; top:5px; left:60px; z-index: 100;">Menu</button>
                         <div class="menuTwo mt-[-53px] h-[80px]  ">
                             <div class="menuTwo__inner flex-grow h-[80px] relative rounded-[100px] " style="top:-180px; transition: 1s;">
                                 
@@ -75,14 +75,25 @@
                     </div>
                     
                     <button id="close_menu" class="relative ml-[10px] mr-[10px]" style="left:500px;">
-                        <img src="img/header/close-menu.png" class="btn_text_close" style=" z-index:0; width: 70px; height: 70px;" alt="закрыть меню">
+                        <img src="img/header/close-menu.png" class="btn_text_close" style=" z-index:0; width: 70px; height: 70px;" alt="close menu">
                     </button>
 
                  </div>
                 </div>
 
-                <div class="burger-menu flex justify-center items-center relative overflow-hidden container border-[0px] border-[#646464] rounded-bl-[20px] rounded-br-[20px] mx-auto w-[85%] mt-[-50px] min-[769px]:mt-[-750px]" style="height: 0px; transition: 0.3s;">
-                    <div class="bg-[#000] min-w-[80%] min-h-[80%] mt-[50px] "></div>
+                <div class="burger-menu container mx-auto w-[85%] max-[320px]:w-full mt-[-50px] min-[769px]:mt-[-750px] relative overflow-hidden border-[0px] backdrop-blur-[5px] border-[#646464] rounded-[20px] " style="height: 0px; transition: 0.3s;">
+                    <div class="burger-menu_items-active relative w-[80%] h-[50px] mx-auto rounded-[20px] border-[#00ffff] border-[1px]" style="top: 85px; transition: 0.3s;"></div>
+                    <div class=" w-full h-[300px] pt-[30px] flex flex-wrap ">
+                            <button id="menuBurgerBtnPortf" class="burger-menu__item_1 w-[80%] h-[50px] mx-auto mt-[5px] rounded-[20px] border-[#646464] border-[1px] bg-[rgba(0,0,0,0.5)]">
+                                <div class="menu_text__inner text-[#fff] text-[25px]">Portfolio</div>
+                            </button>
+                            <button id="menuBurgerBtnPraise" class="burger-menu__item_2 w-[80%] h-[50px] mx-auto mt-[5px] rounded-[20px] border-[#646464] border-[1px] bg-[rgba(0,0,0,0.5)]">
+                                <div class="menu_text__inner text-[#fff] text-[25px]">Price list</div>
+                            </button>
+                            <button id="menuBurgerBtnContac" class="burger-menu__item_3 w-[80%] h-[50px] mx-auto mt-[5px] rounded-[20px] border-[#646464] border-[1px] bg-[rgba(0,0,0,0.5)]">
+                                <div class="menu_text__inner text-[#fff] text-[25px]">Contacts</div>
+                            </button>
+                    </div>
                 </div>
 
             </div>
