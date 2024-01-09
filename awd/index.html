@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang='ru'>
+      <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+          <title>Document</title>
+        </head>
+  <style>
+    body{
+      margin: 0px;
+      height: 100vh;
+      background: #1E1E1E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrapper{
+      margin-top: 20px;
+      width: 150px;
+      height:max-content;
+    }
+    .items{
+      width: 150px;
+      display: flex;
+      transition: 1s;
+    }
+    .line-progress{
+      width: 100%;
+      height: 50px;
+      padding-top: 5px;
+    }
+    .inner_line-progress{
+      margin-top: 10px;
+      width: 100%;
+      height: max-content;
+      /* background-color: #ff7b00; */
+    }
+    .inner_line{
+      height: 5px;
+      transition: 0.2s;
+    }
+    .text_result{
+      width: 100%;
+      height: 20px;
+      overflow: hidden;
+      text-align: center;
+      color: #fff;
+    }
+    .text_result_1{
+      margin-top: -36px;
+      transition: 0.3s;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+                  <div class="items">
+                    <svg class="itemss" xmlns="http://www.w3.org/2000/svg" width="150" height="175" viewBox="0 0 150 175" fill="none">
+                        <rect id="item_1" x="0.5" y="0.5" width="0" height="24" rx="0" stroke="#00ffff" stroke-opacity="1"/>
+                        <rect id="item_2" x="0.5" y="25.5" width="99" height="0" rx="0" stroke="#00ffff" stroke-opacity="1"/>
+                        <rect id="item_3" x="100.5" y="25.5" width="0" height="49" rx="0" stroke="#00ffff" stroke-opacity="1"/>
+                        <rect id="item_4" x="0.5" y="75.5" width="49" height="0" rx="0" stroke="#00ffff" stroke-opacity="1"/>             
+                        <rect id="item_5" x="50.5" y="75.5" width="0" height="49" rx="0" stroke="#00ffff" stroke-opacity="1"/>
+                        <rect id="item_6" x="50.5" y="125.5" width="0" height="49" rx="0" stroke="#00ffff" stroke-opacity="1"/>
+                    </svg>
+                  </div>  
+                      <div class="line-progress">
+                          <div class="inner_line-progress">
+                              <div class="inner_line"></div>
+                              <div class="text_result">
+                                <div class="text_result_1">Готово!</div>
+                                <div class="text_result_2">Почти готово</div> 
+                                <div class="text_result_3">Не готово</div> 
+                              </div>
+                          </div>  
+                      </div>
+    </div>
+  </body>
+  <script>
+    
+    let blockItems = document.querySelector('.items svg')
+    let blockItemss = document.querySelector('.itemss')
+    
+    // items
+    let itemId_1 = document.querySelector('#item_1')
+    let itemId_2 = document.querySelector('#item_2')
+    let itemId_3 = document.querySelector('#item_3')
+    let itemId_4 = document.querySelector('#item_4')
+    let itemId_5 = document.querySelector('#item_5')
+    let itemId_6 = document.querySelector('#item_6')
+    // lines
+    let lines = document.querySelector('.inner_line') 
+    // text
+    let text_1 = document.querySelector('.text_result_1')
+    // block progress line
+    let blockProgressLine = document.querySelector('.line-progress')
+
+
+    // Red
+    // lines.style.backgroundColor = '#ff0000'
+    // Orange
+    // lines.style.backgroundColor = '#00ff00'
+    // Green
+    // lines.style.backgroundColor = '#ff7b00'
+
+    lines.style.backgroundColor = '#ff0000'
+    setTimeout(() => {
+      itemId_1.setAttribute('width', '149')
+      itemId_1.setAttribute('rx', '9')
+      itemId_1.style.transition = '0.3s'
+    }, 500);
+    setTimeout(() => {
+      itemId_2.setAttribute('height', '49')
+      itemId_2.setAttribute('rx', '9')
+      itemId_2.style.transition = '0.3s'
+
+    }, 1000);
+
+
+    setTimeout(() => {
+      itemId_3.setAttribute('width', '49')
+      itemId_3.setAttribute('rx', '9')
+      itemId_3.style.transition = '0.3s'
+      lines.style.backgroundColor = '#ff7b00'
+      text_1.style.marginTop = "-18px";
+
+    }, 1500);
+
+    setTimeout(() => {
+      itemId_4.setAttribute('height', '99')
+      itemId_4.setAttribute('rx', '9')
+      itemId_4.style.transition = '0.3s'
+    }, 2000);
+    setTimeout(() => {
+      itemId_5.setAttribute('width', '99')
+      itemId_5.setAttribute('rx', '9')
+      itemId_5.style.transition = '0.3s'
+    }, 2500);
+
+    setTimeout(() => {
+      itemId_6.setAttribute('width', '99')
+      itemId_6.setAttribute('rx', '9')
+      itemId_6.style.transition = '0.3s'
+      lines.style.backgroundColor = '#00ff00'
+      text_1.style.marginTop = "-0px";
+    }, 3000);
+    setTimeout(() => {
+      blockProgressLine.style.transition = '0.3s'
+      blockProgressLine.style.opacity = '0'
+    }, 4000);
+
+    
+  </script>
+</html>
