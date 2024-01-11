@@ -51,13 +51,10 @@ closeMenu.addEventListener('click', () => {
 
     menuInnerOpenSlider.flexGrow = '0';
     menuInnerOpenSlider.transition = '0.4s';
-
     btnOpenSlider.style.transition = '1.2s';
-
     menuTwoInner.style.top = '-180px';
-
     closeMenu.style.left = '1500px';
-
+    //margin-x for anim
     menuInnerBtnPraiseList.marginLeft = '0px';
     menuInnerBtnPraiseList.marginRight = '0px';
     menuInnerBtnPraiseList.transition = '1s';
@@ -78,7 +75,6 @@ closeMenu.addEventListener('click', () => {
 
 let innerBtnClose = document.querySelector('.btn_text_close');
 // responsive design
-
 // change family menu block
 setInterval(() => {
   if (window.matchMedia("(max-width: 2560px)").matches) {
@@ -110,77 +106,79 @@ setInterval(() => {
 
 document.querySelector('#btn_Portf').addEventListener('click', () => {
   if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
+    // marginActiveBorder for burgerMenu and classicMenu
     borderActiveBtn.style.left = '0%';
     borderActiveBtn.style.transition = '0.5s';
+    menuBurgerActive.top = '85px';
     //transition
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
-    //bg
-    bgOneBlock.style.transform = "rotatey(0deg)";
-    bgOneBlock.style.transition = '0.5s';
-    bgOneBlock.style.transitionDelay = '0.5s';
 
-
-    // render-block (off \ on) - oneBlock
-    // not change oneBlock
-    // render-block (off \ on) - twoBlock
+    // render-block (off \ on)
     if (bgTwoBlock.classList.contains('hidden')) {
       bgTwoBlock.classList.remove('hidden');
       bgTwoBlock.classList.add('hidden');
     }
-    // render-block (off \ on) - threeBlock
     if (bgThreeBlock.classList.contains('hidden')) {
       bgThreeBlock.classList.remove('hidden');
       bgThreeBlock.classList.add('hidden');
     }
 
+    // open block "bgOneBlock"
+    bgOneBlock.style.transform = "rotatey(0deg)";
+    bgOneBlock.style.transition = '0.5s';
+    bgOneBlock.style.transitionDelay = '0.5s';
+    //
     bgThreeBlock.style.transform = "rotatey(90deg)";
     bgThreeBlock.style.transition = '0.5s';
-
+    //
     bgTwoBlock.style.transform = "rotatey(90deg)";
     bgTwoBlock.style.transition = '0.5s';
   }
 });
 document.querySelector('#btn_praise').addEventListener('click', () => {
   if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
+    // marginActiveBorder for burgerMenu and classicMenu
     borderActiveBtn.style.left = '35%';
     borderActiveBtn.style.transition = '0.5s';
+    menuBurgerActive.top = '175px';
     //transition
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
-    //bg
+    // open block "bgThreeBlock"
     bgThreeBlock.style.transform = "rotatey(0deg)";
     bgThreeBlock.style.transition = '0.5s';
     bgThreeBlock.style.transitionDelay = '0.5s';
-
+    //
     bgTwoBlock.style.transform = "rotatey(90deg)";
     bgTwoBlock.style.transition = '0.5s';
-
+    //
     bgOneBlock.style.transform = "rotatey(90deg)";
     bgOneBlock.style.transition = '0.5s';
   }
 });
 document.querySelector('#btn_Contac').addEventListener('click', () => {
   if (borderActiveBtn.style.left === '0%', '35%', '66.2%') {
+    // marginActiveBorder for burgerMenu and classicMenu
     borderActiveBtn.style.left = '66.2%';
     borderActiveBtn.style.transition = '0.5s';
+    menuBurgerActive.top = '265px';
     //transition
     menuInnerBtnContact.transition = '0.5s';
     menuInnerBtnPortfolio.transition = '0.5s';
-    //bg
+    // open block "bgTwoBlock"
     bgTwoBlock.style.transform = "rotatey(0deg)";
     bgTwoBlock.style.transition = '0.5s';
     bgTwoBlock.style.transitionDelay = '0.5s';
-
+    //
     bgThreeBlock.style.transform = "rotatey(90deg)";
     bgThreeBlock.style.transition = '0.5s';
-
+    //
     bgOneBlock.style.transform = "rotatey(90deg)";
     bgOneBlock.style.transition = '0.5s';
+
   }
 });
-
-
 
 // btnOpenBurgerMenu
 let btnBurgerMenu = document.querySelector('#btnOpenBurgerMenu');
@@ -193,6 +191,8 @@ let menuBurgerBtnContac = document.querySelector('#menuBurgerBtnContac').style;
 //item active
 let menuBurgerActive = document.querySelector('.burger-menu_items-active').style;
 
+
+//btnOpenburgerMenu
 btnBurgerMenu.addEventListener('click', () => {
   if (blockBurgerMenu.style.height === '0px') {
     blockBurgerMenu.style.height = '352px';
@@ -218,21 +218,14 @@ btnBurgerMenu.addEventListener('click', () => {
 
     menuInnerBtnPraiseList.transition = '1s';
 
-  }
-});
-btnBurgerMenu.addEventListener('click', () => {
-
-  if (btnInnerOpenSlider.top === '-85px') {
+  } else if (btnInnerOpenSlider.top === '-85px') {
     btnInnerOpenSlider.top = '10px';
     btnInnerOpenSlider.transitionDelay = '0.5s';
 
     menuInnerOpenSlider.flexGrow = '0';
     menuInnerOpenSlider.transition = '0.4s';
-
     btnOpenSlider.style.transition = '1.2s';
-
     menuTwoInner.style.top = '-180px';
-
     closeMenu.style.left = '1500px';
 
     menuInnerBtnPraiseList.marginLeft = '0px';
@@ -242,23 +235,23 @@ btnBurgerMenu.addEventListener('click', () => {
     if (btnOpenSlider.style.top === '10px') {
       btnOpenSlider.style.top = '5px';
     };
-
   }
 
 });
 
 
-
 document.querySelector('#menuBurgerBtnPortf').addEventListener('click', () => {
   if (menuBurgerActive.top === '85px', '175px', '265px') {
+    // marginActiveBorder for burgerMenu and classicMenu
     menuBurgerActive.top = '85px';
-    // pages
+    borderActiveBtn.style.left = '0%';
+    // open block "bgOneBlock" (burgerMenu)
     bgTwoBlock.style.transform = "rotatey(90deg)";
     bgTwoBlock.style.transition = '0.5s';
-
+    //
     bgThreeBlock.style.transform = "rotatey(90deg)";
     bgThreeBlock.style.transition = '0.5s';
-
+    //
     bgOneBlock.style.transform = "rotatey(0deg)";
     bgOneBlock.style.transition = '0.5s';
     bgOneBlock.style.transitionDelay = '0.5s';
@@ -266,35 +259,36 @@ document.querySelector('#menuBurgerBtnPortf').addEventListener('click', () => {
 });
 document.querySelector('#menuBurgerBtnPraise').addEventListener('click', () => {
   if (menuBurgerActive.top === '85px', '175px', '265px') {
+    // marginActiveBorder for burgerMenu and classicMenu
     menuBurgerActive.top = '175px';
-    // pages
+    borderActiveBtn.style.left = '35%';
+    // open block "bgThreeBlock" (burgerMenu)
     bgTwoBlock.style.transform = "rotatey(90deg)";
     bgTwoBlock.style.transition = '0.5s';
-
-
+    //
     bgThreeBlock.style.transform = "rotatey(0deg)";
     bgThreeBlock.style.transition = '0.5s';
     bgThreeBlock.style.transitionDelay = '0.5s';
-
+    //
     bgOneBlock.style.transform = "rotatey(90deg)";
     bgOneBlock.style.transition = '0.5s';
-
   }
 });
 document.querySelector('#menuBurgerBtnContac').addEventListener('click', () => {
   if (menuBurgerActive.top === '85px', '175px', '265px') {
+    // marginActiveBorder for burgerMenu and classicMenu
     menuBurgerActive.top = '265px';
-    // pages
+    borderActiveBtn.style.left = '66.2%';
+    // open block "bgThreeBlock" (burgerMenu)
     bgTwoBlock.style.transform = "rotatey(0deg)";
     bgTwoBlock.style.transition = '0.5s';
     bgTwoBlock.style.transitionDelay = '0.5s';
-
-
+    //
     bgThreeBlock.style.transform = "rotatey(90deg)";
     bgThreeBlock.style.transition = '0.5s';
-
-
+    //
     bgOneBlock.style.transform = "rotatey(90deg)";
     bgOneBlock.style.transition = '0.5s';
+
   }
 });
