@@ -239,7 +239,6 @@ btnBurgerMenu.addEventListener('click', () => {
 
 });
 
-
 document.querySelector('#menuBurgerBtnPortf').addEventListener('click', () => {
   if (menuBurgerActive.top === '85px', '175px', '265px') {
     // marginActiveBorder for burgerMenu and classicMenu
