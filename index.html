@@ -17,14 +17,14 @@
             </head> 
                 
             <!-- google counter -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2H37GH5WV"></script>
+            <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2H37GH5WV"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
               gtag('config', 'G-Q2H37GH5WV');
-            </script>
+            </script> -->
             <!-- /google counter -->
 
 
@@ -199,11 +199,21 @@
     <!-- snow https://alaev.info/blog/post/9431 -->
     <script src="snow/snowFlakes/Snow.js"></script>
     <script>
-            new Snow ({
+
+            if (window.matchMedia("(min-width: 1024px)").matches) {
+                new Snow ({
                 iconColor:'#00FFF0',
-		    	showSnowBalls: false,
+                showSnowBalls: false,
                 countSnowflake: '60'
-		    });  
+		        }); 
+            }else if (window.matchMedia("(min-width: 765px)").matches) {
+                new Snow ({
+                iconColor:'#00FFF0',
+                showSnowBalls: false,
+                countSnowflake: '10'
+		        }); 
+            }
+  
     </script>
     <!-- /snow -->
     <script type="module" src="js/catalog/catalog.js"></script>  
