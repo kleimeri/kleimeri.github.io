@@ -1,6 +1,29 @@
 body{
     min-height: 100vh;
 }
+
+/* scroll-bar */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+    border-radius: 100px;
+    border: 1px solid aqua;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 255, 255,0.5);
+    border-radius: 100px;
+    border: 1px solid aqua;
+}
+/* 
+
+::-webkit-scrollbar-track 
+::-webkit-scrollbar-thumb 
+*/
+/* /scroll-bar */
 .portfo_block_{
     height: max-content;
     flex-grow: 1;
