@@ -1,15 +1,9 @@
 [
-
      {
+          "id":1,
           "name_block": "paymilate",
           "active": "true",
-          "link": "pages_from_block/page_paymilate.html",
-          "description": {
-               "framework": "Без фрейморка",
-               "adaptation": "до 1440px",
-               "additions": "0",
-               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
-          },
+          "link": "pages/page_paymilate.html",
           "image": {
                "name_img": "paymilate",
                "url": "img/main/block_one/logo/image_paymilate.png",
@@ -18,25 +12,22 @@
           }
      },
      {
+          "id":2,
           "name_block": "pai",
-          "link": "pages_from_block/page_pai.html",
+          "link": "pages/page_pai.html",
           "active": "true",
-          "description": {
-               "framework": "Без фрейморка",
-               "adaptation": "до 1440px",
-               "additions": "0",
-               "tags": ["Html/Css/Js", "Jquery", "слайдер"]
-          },
           "image": {
-               "name_img": "pai",
+               "name_img": "paymilate",
                "url": "img/main/block_one/logo/image_pai.png",
                "class_img": "portfo_block_2",
-               "styleBgSize": "background-size: 40%;"
+               "styleBgSize": "background-size: 50%;"
           }
      },
+
      {
+          "id":3,
           "name_block": "Nft",
-          "link": "pages_from_block/page_nft.html",
+          "link": "pages/page_nft.html",
           "active": "true",
           "description": {
                "framework": "Без фрейморка",
@@ -52,8 +43,9 @@
           }
      },
      {
+          "id":4,
           "name_block": "HouseVOP",
-          "link": "pages_from_block/page_housevop.html",
+          "link": "pages/page_housevop.html",
           "active": "true",
           "description": {
                "framework": "Без фрейморка",
@@ -69,8 +61,9 @@
           }
      },
      {
+          "id":5,
           "name_block": "Womazing",
-          "link": "pages_from_block/page_womazing.html",
+          "link": "pages/page_womazing.html",
           "active": "true",
           "description": {
                "framework": "Без фрейморка",
@@ -86,8 +79,9 @@
           }
      },
      {
+          "id":6,
           "name_block": "triumf",
-          "link": "pages_from_block/page_triumf.html",
+          "link": "pages/page_triumf.html",
           "active": "true",
           "description": {
                "framework": "Без фрейморка",
