@@ -4,17 +4,14 @@ body{
 
 /* scroll-bar */
 ::-webkit-scrollbar{
-    width: 10px;
+    width:12px;
     background-color: transparent;
 }
 ::-webkit-scrollbar-button {
     width: 0px;
     height: 0px;
-    border-radius: 100px;
-    border: 1px solid aqua;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 255, 255,0.5);
     border-radius: 100px;
     border: 1px solid aqua;
 }
