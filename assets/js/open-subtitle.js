@@ -1,3 +1,4 @@
+
 //btn
 let btnOpenSlider = document.querySelector('#btn-menu');
 let btnInnerOpenSlider = document.querySelector('.btn__menu').style;
@@ -224,8 +225,11 @@ btnBurgerMenu.addEventListener('click', () => {
 
     menuInnerOpenSlider.flexGrow = '0';
     menuInnerOpenSlider.transition = '0.4s';
+
     btnOpenSlider.style.transition = '1.2s';
+
     menuTwoInner.style.top = '-180px';
+
     closeMenu.style.left = '1500px';
 
     menuInnerBtnPraiseList.marginLeft = '0px';
@@ -291,3 +295,4 @@ document.querySelector('#menuBurgerBtnContac').addEventListener('click', () => {
 
   }
 });
+

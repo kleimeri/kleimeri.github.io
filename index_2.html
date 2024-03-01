@@ -16,22 +16,26 @@
       justify-content: center;
       align-items: center;
 
-      background: #000;
+      background: #1E1E1E;
     }
+    @font-face{
+    font-family: "JostExtraBold";
+    src: url(/assets/fonts/jost/Jost-ExtraBold.ttf) ;
+    } 
     .container{
       width: 150px;
-      height: 175px;
+      height: 250px;
       display: flex;
       flex-wrap: wrap;
       background-color: transparent;
     }
-
-    .container div{
-      border-radius: 5px;
-      transition: 0.5s;
+    .inner__container{
+      width: 150px;
+      height: 175px;
+      display: flex;
+      flex-wrap: wrap;
     }
     
-
     .inner__box_1{
       width: 150px;
       height: 25px;
@@ -55,6 +59,8 @@
       width: 0px;
       height: 0px;
       border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 5px;
+      transition: 0.5s;
       background: #292929;
       animation: animBox_1;
       animation-duration: 0.5s;
@@ -82,6 +88,8 @@
       width: 0px;
       height: 0px;
       border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 5px;
+      transition: 0.5s;
       background: #292929;
       animation: animBox_2;
       animation-duration: 0.5s;
@@ -110,6 +118,8 @@
       /* width: 48px;
       height: 48px; */
       border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 5px;
+      transition: 0.5s;
       background: #292929;
       animation: animBox_3;
       animation-duration: 0.5s;
@@ -137,6 +147,8 @@
       /* width: 49px;
       height: 98.5px; */
       border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 5px;
+      transition: 0.5s;
       background: #292929;
       animation: animBox_4;
       animation-duration: 0.5s;
@@ -164,6 +176,8 @@
       /* width: 97px;
       height: 50px; */
       border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 5px;
+      transition: 0.5s;
       background: #292929;
       animation: animBox_5;
       animation-duration: 0.5s;
@@ -191,6 +205,8 @@
       /* width: 97px;
       height: 47px; */
       border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 5px;
+      transition: 0.5s;
       background: #292929;
       animation: animBox_6;
       animation-duration: 0.5s;
@@ -214,29 +230,116 @@
       height: 48px;
       }
     }
-
-
     .close_boxs{
       width: 0px;
       height: 0px;
       border: 0px solid rgba(255,255,255,0.2);
       animation-name: animBox;
     }
+    
+    
+    .progress{
+      width: 100%;
+      height: 100px;
+    }
+    .progress-text{
+      height: 20px;
+      margin-top: 20px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .progress-text ul{
+      margin-top:-75px ;
+      height: 100%;
+      padding: 0;
+      list-style-type: none;
+      animation-name: margin_progress-text ;
+      animation-duration: 3.2s;
+      animation-direction:normal;
+      animation-fill-mode:both;
+      animation-delay: 0.5s;
+      
+    }
+    @keyframes margin_progress-text {
+      0%{
+        margin-top:20px;
+      }
+      30%{
+        margin-top:20px;
+      }
+      50%{
+      margin-top:-30px;
+      }
+      80%{
+        margin-top:-30px;
+      }
+      100%{
+        margin-top:-75px;
+      }
+    }
+    .progress-text ul>li {
+      font-family: "JostExtraBold";
+      color: #fff;
+      text-align: center;
+    }
+    .progress-line{
+      width: 100%;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .inner__progress-line{
+      width: 20%;
+      height: 5px;
+      background-color: red;
+      border-radius: 50px;
+      animation-name: progress-line;
+      animation-duration: 3.2s;
+      animation-direction:normal;
+      animation-fill-mode:both;
+      animation-delay: 0.5s;
+    }
+    @keyframes progress-line {
+      0%{
+        width: 20%;
+        background-color: red;
+      }
+      30%{
+        width: 20%;
+        background-color: red;
+      }
+      50%{
+        width: 50%;
+        background-color: orange;
+      }
+      80%{
+        width: 50%;
+        background-color: orange;
+      }
+      100%{
+        width: 90%;
+        background-color: green;
+      }
+    }
   </style>
   <body>
-    <div class="container">
-      <div class="inner__box_1">
+    <div class="container_page-prise-list ">
+      <div class="inner__container">
+        <div class="inner__box_1">
         <div class="box_1"></div>
-      </div>
-      <div class="inner__box_2">
+        </div>
+        <div class="inner__box_2">
         <div class="box_2"></div>
-      </div>
-      <div class="inner__box_3">
+        </div>
+        <div class="inner__box_3">
         <div class="box_3"></div>
-      </div>
-      <div class="inner__box_4">
+        </div>
+        <div class="inner__box_4">
         <div class="box_4"></div>
-      </div>
+        </div>
         <section>
           <div class="inner__box_5">
             <div class="box_5"></div>
@@ -245,6 +348,19 @@
             <div class="box_6"></div>
           </div>
         </section>
+      </div>
+      <section class="progress">
+        <div class="progress-text">
+            <ul class="inner__progress-text" >
+              <li>ЕЩЕ НЕ ГОТОВО!</li>
+              <li>ПОЧТИ ГОТОВО!</li>
+              <li>ГОТОВО!</li>
+            </ul>
+        </div>
+        <div class="progress-line">
+          <div class="inner__progress-line"></div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
